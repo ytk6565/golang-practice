@@ -6,9 +6,6 @@ replace example.com/greetings => ../greetings
 
 replace example.com/greeting_module => ../greeting_module
 
-require example.com/greeting_module v1.0.0
+replace example.com/imageconverter => ../imageconverter
 
-require (
-	github.com/tenntenn/greeting v1.0.0 // indirect
-	github.com/tenntenn/greeting/v2 v2.2.1 // indirect
-)
+require example.com/imageconverter v0.0.0-00010101000000-000000000000
