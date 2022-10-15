@@ -1,15 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-type Hex int
-
-func (h Hex) String() string {
-	return fmt.Sprintf("%x", int(h))
-}
+	"example.com/greeting_module"
+)
 
 func main() {
-	var hex Hex = 100
-	f := Hex.String
-	fmt.Printf("%T\n%s\n", f, f(hex))
+	message1 := greeting_module.Do1()
+	fmt.Println(message1)
+	message2 := greeting_module.Do2()
+	fmt.Println(message2)
 }
